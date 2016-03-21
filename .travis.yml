@@ -1,0 +1,57 @@
+sudo: false
+git:
+  depth: 10 # Repo is big hence prefer depth smaller than default `50`.
+language: java
+jdk:
+  - oraclejdk8
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
+install:
+  - T="idea/146.975" # The mentioned treeish must be explicit here.
+  # In `master` it can be kept as `master`.  In a feature (or fix)
+  # branch, the proposed approach is that a tag (across repos) -
+  # preferably an `idea/*` tag e.g. `idea/146.975` - is chosen as
+  # reference.
+  #
+  # In order to ease development in a branch, `git describe` might be
+  # used for inferring the reference `idea/*` tag that the branch is
+  # based upon, but such approach appears to be tricky because:
+  #
+  # * In order for `git describe` to work, the repo shall have tags
+  #   and (enough?) depth;
+  #
+  # * Travis (correctly) fetch the repo with a limited depth (default
+  #   `50` but configurable);
+  #
+  # * The repo has a *masive* number of tags;
+  #
+  # * `git fetch` appear to fetch *all* tags even if only a narrow
+  #   refspec for `idea/*` is specified;
+  #
+  # * `git describe` appear to play badly with a repo with limited
+  #   (even if apparently sufficient) depth, returning error `fatal:
+  #   No tags can describe '<HASH>'`.
+  #
+  # For reference - starting points of commands for attempting to
+  # reproduce the above are:
+  #
+  # ```sh
+  # git fetch --depth=1 origin 'refs/tags/idea/*:refs/tags/idea/*'
+  # git describe --abbrev=0 --tags --debug --match='idea/*' HEAD # Assumption: Depth of git repo is greater than number of commits between the most recent `idea/*` tag and `HEAD`.
+  # ```
+  #
+  - ./getPluginsWorkingTree.sh "$T"
+script:
+  - ant $ANT_TARGET
+after_failure:
+  - cat out/tmp/system/build-log/build.log
+matrix:
+  allow_failures:
+  - env: UI=java ANT_TARGET=test
+    jdk: oraclejdk8
+  fast_finish: true
+env:
+  - UI=java ANT_TARGET=build
+  - UI=java ANT_TARGET=test
