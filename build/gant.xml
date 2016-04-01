@@ -47,6 +47,10 @@
        <include name="snappy-in-java-*.jar"/>
        <include name="cli-parser-*.jar"/>
        <include name="nanoxml-*.jar"/>
+       <include name="lanterna-3.0.0-beta2.jar"/>
+       <include name="charva.jar"/>
+       <include name="charva-showcase.jar"/>
+       <include name="charva-lanterna.jar"/>
     </fileset>
   </path>
 

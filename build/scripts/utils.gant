@@ -368,7 +368,11 @@ binding.setVariable("classPathLibs", [
         "jdom.jar",
         "log4j.jar",
         "trove4j.jar",
-        "jna.jar"
+        "jna.jar",
+        "lanterna-3.0.0-beta2.jar",
+        "charva.jar",
+        "charva-showcase.jar",
+        "charva-lanterna.jar"
 ])
 
 binding.setVariable("platformApiModules", [
