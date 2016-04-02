@@ -43,6 +43,10 @@ install:
   # ```
   #
   - ./getPluginsWorkingTree.sh "$T"
+  - getCharvaLanternaAndItsDeps() { ./getLanterna.sh "3.0.0-beta2" "${1:?}" && { ./buildCharvaLanterna.sh "https://github.com/viktor-podzigun/charva-lanterna.git" "8655f16" charva-lanterna.d "${1:?}" && rm -rf charva-lanterna.d; } }
+  - case $UI in java) ;; charva-lanterna) getCharvaLanternaAndItsDeps "lib";; esac
+before_script:
+  - case $UI in java) ;; charva-lanterna) build/java2charva.sh "$(pwd)";; esac
 script:
   - ant $ANT_TARGET
 after_failure:
@@ -51,7 +55,13 @@ matrix:
   allow_failures:
   - env: UI=java ANT_TARGET=test
     jdk: oraclejdk8
+  - env: UI=charva-lanterna ANT_TARGET=build
+    jdk: oraclejdk8
+  - env: UI=charva-lanterna ANT_TARGET=test
+    jdk: oraclejdk8
   fast_finish: true
 env:
   - UI=java ANT_TARGET=build
   - UI=java ANT_TARGET=test
+  - UI=charva-lanterna ANT_TARGET=build
+  - UI=charva-lanterna ANT_TARGET=test
