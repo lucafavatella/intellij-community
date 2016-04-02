@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="charva">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/charva.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
