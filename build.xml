@@ -66,6 +66,7 @@
         <sysproperty key="idea.test.group" value="ALL_EXCLUDE_DEFINED"/>
         <arg value="-f"/>
         <arg value="${project.home}/build/gant.xml"/>
+        <arg value="-keep-going"/>
       </java>
     </sequential>
   </macrodef>
