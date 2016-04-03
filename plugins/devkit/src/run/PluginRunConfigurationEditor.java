@@ -40,10 +40,14 @@ import org.jetbrains.idea.devkit.module.PluginModuleType;
 import org.jetbrains.idea.devkit.projectRoots.IdeaJdk;
 import org.jetbrains.idea.devkit.projectRoots.Sandbox;
 
-import javax.swing.*;
+import javax.swing.JCheckBox;
+import javax.swing.JComponent;
+import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;

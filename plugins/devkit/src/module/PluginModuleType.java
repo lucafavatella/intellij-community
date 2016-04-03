@@ -30,7 +30,7 @@ import org.jetbrains.idea.devkit.build.PluginBuildConfiguration;
 import org.jetbrains.idea.devkit.build.PluginBuildUtil;
 import org.jetbrains.idea.devkit.projectRoots.IdeaJdk;
 
-import javax.swing.*;
+import javax.swing.Icon;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

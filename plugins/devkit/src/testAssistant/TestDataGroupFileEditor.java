@@ -27,8 +27,12 @@ import com.intellij.openapi.util.UserDataHolderBase;
 import com.intellij.reference.SoftReference;
 import org.jetbrains.annotations.NotNull;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.BorderFactory;
+import javax.swing.JComponent;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import java.awt.Font;
 import java.beans.PropertyChangeListener;
 import java.lang.ref.WeakReference;
 

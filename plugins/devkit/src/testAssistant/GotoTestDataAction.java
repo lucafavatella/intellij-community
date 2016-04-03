@@ -22,7 +22,7 @@ import com.intellij.openapi.ui.popup.JBPopupFactory;
 import com.intellij.ui.awt.RelativePoint;
 import com.intellij.util.ui.FilePathSplittingPolicy;
 
-import javax.swing.*;
+import javax.swing.Icon;
 import java.io.File;
 import java.util.Collections;
 

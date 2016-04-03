@@ -37,7 +37,7 @@ import com.intellij.util.PathUtil;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import javax.swing.*;
+import javax.swing.JList;
 import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.IOException;

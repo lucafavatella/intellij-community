@@ -30,7 +30,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.idea.devkit.DevKitBundle;
 import org.jetbrains.idea.devkit.module.PluginModuleType;
 
-import javax.swing.*;
+import javax.swing.Icon;
 import java.io.File;
 import java.io.IOException;
 import java.util.Collection;

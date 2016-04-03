@@ -38,7 +38,10 @@ import org.jetbrains.idea.devkit.util.ActionType;
 import org.jetbrains.idea.devkit.util.ComponentType;
 import org.jetbrains.idea.devkit.util.DescriptorUtil;
 
-import javax.swing.*;
+import javax.swing.BoxLayout;
+import javax.swing.JCheckBox;
+import javax.swing.JComponent;
+import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import java.util.List;

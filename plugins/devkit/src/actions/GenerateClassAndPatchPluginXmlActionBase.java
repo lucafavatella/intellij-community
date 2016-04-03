@@ -25,7 +25,7 @@ import com.intellij.util.IncorrectOperationException;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.idea.devkit.util.ComponentType;
 
-import javax.swing.*;
+import javax.swing.Icon;
 
 /**
  * @author max

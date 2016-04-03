@@ -35,7 +35,10 @@ import org.jetbrains.idea.devkit.inspections.quickfix.RegisterComponentFix;
 import org.jetbrains.idea.devkit.module.PluginModuleType;
 import org.jetbrains.idea.devkit.util.ComponentType;
 
-import javax.swing.*;
+import javax.swing.BoxLayout;
+import javax.swing.JCheckBox;
+import javax.swing.JComponent;
+import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 

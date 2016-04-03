@@ -41,7 +41,7 @@ import org.jetbrains.idea.devkit.util.ChooseModulesDialog;
 import org.jetbrains.idea.devkit.util.DescriptorUtil;
 import org.jetbrains.jps.model.java.JavaModuleSourceRootTypes;
 
-import javax.swing.*;
+import javax.swing.Icon;
 import java.util.*;
 
 /**

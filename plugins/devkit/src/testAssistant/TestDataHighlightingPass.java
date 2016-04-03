@@ -28,8 +28,8 @@ import com.intellij.util.ui.PlatformColors;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.Icon;
+import java.awt.Font;
 
 /**
  * @author Konstantin Bulenkov

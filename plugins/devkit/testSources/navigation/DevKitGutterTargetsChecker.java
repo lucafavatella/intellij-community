@@ -25,7 +25,7 @@ import com.intellij.testFramework.UsefulTestCase;
 import com.intellij.util.Function;
 import com.intellij.util.containers.ContainerUtil;
 
-import javax.swing.*;
+import javax.swing.Icon;
 import java.util.Collection;
 
 import static junit.framework.TestCase.assertEquals;

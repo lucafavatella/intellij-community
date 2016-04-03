@@ -19,7 +19,7 @@ import com.intellij.openapi.util.io.FileUtilRt;
 import com.intellij.testFramework.TestRunnerUtil;
 import junit.framework.TestCase;
 
-import javax.swing.*;
+import javax.swing.SwingUtilities;
 import java.io.File;
 import java.nio.charset.Charset;
 import java.util.List;

@@ -42,7 +42,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.idea.devkit.DevKitBundle;
 
-import javax.swing.*;
+import javax.swing.Icon;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileFilter;
